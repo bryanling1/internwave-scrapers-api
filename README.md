@@ -1,1 +1,0 @@
-# internwave-scrapers-api 
