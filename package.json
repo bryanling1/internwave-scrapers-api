@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A helper API for web scrapers in the InternWave desktop application",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup --watch"
   },
   "keywords": [
     "internwave",
