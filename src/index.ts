@@ -1,6 +1,6 @@
 export * from "src/ipc/onStartScraping/onStartScraping"
-export { MessageType } from "src/ipc/types/message/message"
-export  { ReportingScrapingMessage } from "src/ipc/types/message/variants/ReportScrapingMessage/ReportScrapingMessage"
+export * from "src/ipc/types/message/message"
+export * from "src/ipc/types/message/variants/ReportScrapingMessage/ReportScrapingMessage"
 export * from "src/jobs/types/Categorizations"
 export * from "src/jobs/types/Charts"
 export * from "src/jobs/types/Company"
