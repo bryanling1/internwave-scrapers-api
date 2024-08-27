@@ -4,7 +4,7 @@ import { IScrapedJob } from "src/jobs/types/ScrapedJob"
 
 export const reportDone = (jobs: IScrapedJob[]) => {
     const msg: IDoneScrapingMessage = {
-        type: MessageType. DONE_SCRAPING,
+        type: MessageType.DONE_SCRAPING,
         payload: {
             jobs
         }
