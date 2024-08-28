@@ -4,10 +4,10 @@ import { IScrapedJob } from "src/jobs/types/ScrapedJob";
 
 
 export const onStartScraping = (
-    callback:(payload: IStartScrapingPayload) => IScrapedJob[]
+    callback:(payload: IStartScrapingPayload) => Promise<IScrapedJob[]>
 ) => {
-    process.on("message", (message: IStartScrapingMessage) => {
-        const jobs = callback(message.payload);
+    process.on("message", async (message: IStartScrapingMessage) => {
+        const jobs = await callback(message.payload);
         reportDone(jobs)
     })
 } 

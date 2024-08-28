@@ -11,6 +11,7 @@ export enum ScraperInputType {
   export interface IScraperInput{
     label: string;
     type: ScraperInputType;
+    required?: boolean;
   }
 
 
