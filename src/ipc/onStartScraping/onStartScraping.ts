@@ -10,9 +10,7 @@ export const onStartScraping = (
     process.on("message", async (message: IStartScrapingMessage) => {
         try{
             const jobs = await callback(message.payload);
-            if(jobs){
-                reportDone(jobs)
-            }
+            reportDone(jobs ?? [])
         }catch(e){
             if(e instanceof Error){
                 reportError(e.message)
